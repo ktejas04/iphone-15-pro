@@ -1,0 +1,105 @@
+copy pasted index.js in constants and utils - study them.
+
+create three sections - navbar, hero and highlights
+
+start designing navbar
+
+insert image(apple), map through array of nav items creating a div for each item.
+created search and bag img.
+apply css to header, nav, navitms and last div(search and bag)
+
+work on Hero section. 
+add secttion>div>p
+add gsap through terminal and import
+create a div for video, set the sources and import necessary things.
+use useState for setting video src acc. to screen width.
+use a function to monitor window size change and call setVideo to change the src on chnage(resize).
+use useEffect for creating and removing eventListener
+create div for buy and tag and animate with required classes
+
+move to highlights section.
+add animation, section and div for text
+code the two watch events
+
+move to video carousel.
+map through highlightsSlides and create divs having the video source
+map through textLists and display text in different paras.
+create refs and video state with properties:
+isEnd and startPlay to handle playing and knowing when video is over
+added useEffect, span, ref and onPlay - study each.
+create video bar for all 4 videos and within each :
+create progression bar and button to play and pause the video
+create handleProcess and use switch case for diff actions
+create animations for video using gsap. this by itself doesn't play the video, here comes the use of loadedData.
+handleLoadedMetaData adds the event e passed to it in loadedData using state func. We can now attach it to our video player onLoadedMetaData
+onLoadedMetadata={(e) => handleLoadedMetaData(i, e)} : this calls hlmd when metadata of vid is loaded with i,e and hlme calls sLD and appends e. Once LD. length > 3, video plays
+write logic of progree bar and add colour white(onUpdate)
+write logic for progress to be completed with video completion(onComplete)
+add few more properties/handlers to video tag. onEnded
+write the slider animation.
+
+Work on Model
+section>div>h1
+after h1 another div for model.
+gsap to animate h1.
+overflow hidden is to avoid scrollbars
+add states and refs
+add another ref to keep track of model to access properties when animating.
+add state for rotation .
+add modelview large and model small with properties
+add canvas and view.Port
+view port is a way of rendering multiple views of a model in the same canvas(to animate)
+add div for color choice and screen size choice text.
+create ul for clors, mao through for each li.
+create button for sizes and map through to get 2 spans. add colours according to conditions.
+
+work on ModelView.jsx
+add ambientLight and PerspectiveCamera
+created Lights.jsx and added below PerspectiveCamera. 
+add Suspense - provides loader till the model loads
+convert file and add from IPhone.jsx 
+wrap suspense in orbitcontrols and group tags
+write orbitcontrols with its properties
+add texture in IPhone and useEffect
+set meshStandard Material
+add loader
+
+
+create animations.js in utils and import in model
+use gsap.timeline. We gt val of smallRotation, then rotate it by value stored in it.
+animate small model to left and large to center
+rotationRef.current.rotation - we get a specific rotation
+add animations in animations.js 
+in modelview, write absolute in view to make right-100% work
+change the conditional right 
+
+use sentry for performance checking. install via npm and paste its code in main.jsx. 
+initialise sentry in main.jsx and use it as wrapper in app.jsx export default Sentry.withProfiler(App);
+
+design features section
+section>div>div>h1
+
+forged in titanium etc.
+
+add exploreVideo, explore1 and 2 images. animate them with external gsap func.
+animate the two paras with white spans
+animate the video for continuos playing with manual gsap func.
+study scrollTrigger
+
+
+add chip section
+add pic with animation. add para and h2.
+add video within iPhone frame img
+add two more para same to features design
+add new pro-class gpu para
+style properly and responsively
+
+Footer section
+Basic footer - study.
+
+
+
+
+
+
+
